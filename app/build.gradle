@@ -30,6 +30,7 @@ dependencies {
     //uses an HTTP library from codepath and helps process
     //network requests
     implementation 'com.codepath.libraries:asynchttpclient:0.0.9'
+    //adds recyclerview library
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
     implementation 'com.github.bumptech.glide:glide:4.8.0'

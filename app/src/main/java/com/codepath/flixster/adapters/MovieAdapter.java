@@ -50,6 +50,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
     //returns the total count of items in the list
     @Override
     public int getItemCount() {
+
         return movies.size();
     }
 
@@ -69,14 +70,15 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
+
             String imageURL;
             //if phone is in landscape
             if (context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
                 imageURL = movie.getBackdropPath();
-            }
-            else{
+            } else {
                 imageURL = movie.getPosterPath();
             }
+
             //if phone is in portrait
             Glide.with(context).load(imageURL).into(ivPoster);
         }

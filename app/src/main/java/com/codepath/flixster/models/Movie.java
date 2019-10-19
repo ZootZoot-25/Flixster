@@ -15,10 +15,12 @@ public class Movie {
     String overview;
 
     public Movie(JSONObject jsonObject) throws JSONException {
+
         backdropPath = jsonObject.getString("backdrop_path");
         posterPath = jsonObject.getString("poster_path");
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
+
     }
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray)throws JSONException{
         List<Movie> movies = new ArrayList<>();
@@ -37,12 +39,10 @@ public class Movie {
     }
 
     public String getTitle() {
-
         return title;
     }
 
     public String getOverview() {
-
         return overview;
     }
 

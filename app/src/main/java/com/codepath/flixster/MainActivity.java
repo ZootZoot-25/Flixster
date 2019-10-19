@@ -11,7 +11,6 @@ import com.codepath.asynchttpclient.AsyncHttpClient;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 import com.codepath.flixster.adapters.MovieAdapter;
 import com.codepath.flixster.models.Movie;
-import com.facebook.stetho.common.ArrayListAccumulator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
